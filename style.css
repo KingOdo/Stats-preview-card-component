@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.stats{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 70vw;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 7px;
+    display: flex;
+}
+
+.card .des{
+    width: 50%;
+    padding: 4rem;
+}
+
+.card .des h1{
+    font-size: 2rem;
+}
+
+.card .des h1 span{
+    color: hsl(277, 64%, 61%);
+    font-size: 2rem;
+}
+
+.card .des p{
+    color: hsl(0, 0%, 100%);
+    font-size: 13px;
+    margin: 1.5rem 0 3rem 0;
+}
+
+.card .card-img{
+    width: 50%;
+    border-radius: 0 7px 7px 0;
+    background:url(images/image-header-desktop.jpg);
+    filter: opacity(0.5) drop-shadow(0 0 hsl(277, 47%, 49%));
+    background-size: cover;
+}
+
+.card .stats{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .stats .number{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.card .stats .name{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+/*Resposnve to Mobile*/
+@media (max-width:375px){
+    .card{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        width: 90vw;
+        height: 100vh;
+    }
+    .card .des{
+        width: auto;
+        height: 70%;
+        text-align:  center;
+        padding: 1.5rem;
+
+    }
+    .card .stats{
+        flex-direction: column;
+    }
+    .card .stats .companies, .card .stats .templates{
+            margin-bottom: 2rem;
+    }
+    .card .card-img{
+        height: 30%;
+        width: 100%;
+        border-radius: 7px 7px 0 0;
+    }
+}
